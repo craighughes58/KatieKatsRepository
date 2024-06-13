@@ -1,7 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cv2lcy68d6np5"]
+[gd_scene load_steps=3 format=3 uid="uid://cv2lcy68d6np5"]
 
 [ext_resource type="PackedScene" uid="uid://ng05txxtxcbc" path="res://Prefabs/scene_button.tscn" id="1_s5wiy"]
+[ext_resource type="PackedScene" uid="uid://b218o02qxv3tp" path="res://Prefabs/goof_object.tscn" id="2_mdqso"]
 
 [node name="Node" type="Node"]
 
 [node name="SceneButton1" parent="." instance=ExtResource("1_s5wiy")]
+
+[node name="GoofObject" parent="." instance=ExtResource("2_mdqso")]
+
+[node name="AnimatedSprite2D" parent="GoofObject" index="0"]
+animation = &"idle"
+
+[editable path="GoofObject"]
